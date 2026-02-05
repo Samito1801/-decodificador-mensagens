@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-surface-light text-slate-900 antialiased;
+}
+
+.dark body {
+  @apply bg-surface-dark text-slate-100;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fade-divider {
+  background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.3), transparent);
+}
